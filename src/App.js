@@ -1,15 +1,14 @@
 import './App.css';
-import './App.scss'
+import CountryList from './CountryList';
 
 
 function App() {
 
   return (
-
     <div className="App">
-      <h1 className="TextStyle">Jubaer Ahamed</h1>
-    </div>
+      <CountryList />
 
+    </div>
   );
 }
 
