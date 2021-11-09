@@ -21,8 +21,8 @@ function App() {
       <h1 style={style}>Object Css</h1>
       {/* External css */}
       <h1 className="TextStyle">External Css</h1>
-
-      <h1 className={styles.TextStyle}>External Css</h1>
+      {/* Module css */}
+      <h1 className={styles.TextStyle}>Module Css</h1>
     </div>
 
   );
