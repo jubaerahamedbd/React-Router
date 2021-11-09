@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.TextStyle {
+  color: lightblue;
+  background-color: yellow;
+  width: 250px;
+  margin: 5px auto;
+}

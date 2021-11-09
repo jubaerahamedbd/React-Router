@@ -1,28 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
-import { Routes, Route, BrowserRouter as Router, Link } from '../node_modules/react-router-dom'
-import About from './components/About';
-import Contact from './components/Contact';
-import Portfolio from './components/Portfolio'
+import styles from './Mycss.module.css'
 
 
 function App() {
+  {/* object css */ }
+  const style = {
+    color: "Green",
+    backgroundColor: 'lightgray',
+    width: "250px",
+    margin: "5px auto"
+  }
   return (
-    <Router>
-      <div className="App">
-        <h1>Home</h1>
 
+    <div className="App">
+      {/* inline css */}
+      <h1 style={{
+        color: "red", backgroundColor: 'lightblue', width: "250px", margin: "5px auto"
+      }}>Inline CSS</h1>
+      <h1 style={style}>Object Css</h1>
+      {/* External css */}
+      <h1 className="TextStyle">External Css</h1>
 
-        <Link to="/about">About</Link>
-        <Link to="/portfolio">Portfolio</Link>
-        <Link to="/contact">Contact</Link>
-        <Routes>
-          <Route path="/about" element={<About/>} />
-          <Route path="/portfolio" element={<Portfolio/>} />
-          <Route path="/contact" element={<Contact/>} />
-        </Routes>
-      </div>
-    </Router>
+      <h1 className={styles.TextStyle}>External Css</h1>
+    </div>
+
   );
 }
 
