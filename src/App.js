@@ -1,12 +1,12 @@
 import './App.css';
-import CountryList from './CountryList';
+import Post from './Post';
 
 
 function App() {
 
   return (
     <div className="App">
-      <CountryList />
+      <Post />
 
     </div>
   );
