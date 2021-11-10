@@ -1,10 +1,11 @@
 import './App.css';
-import Demo from './Demo';
+import Son from './components/Son';
+
 function App() {
 
   return (
     <div className="App">
-      <Demo />
+      <Son name="Puti Name is Salam"/>
     </div>
   );
 }
