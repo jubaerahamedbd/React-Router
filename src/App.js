@@ -1,11 +1,17 @@
 import './App.css';
-import Navigation from './components/Navigation';
+import MyNavigation from './components/MyNavigation';
+import MyRoute from './components/MyRoute';
+import { BrowserRouter } from 'react-router-dom'
 function App() {
 
   return (
     <div className="App">
-      <Navigation />
-
+      <BrowserRouter>
+        <MyNavigation />
+       
+          <MyRoute />
+  
+      </BrowserRouter>
     </div>
   );
 }
