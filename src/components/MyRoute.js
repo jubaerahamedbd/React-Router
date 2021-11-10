@@ -4,7 +4,7 @@ import PageOne from './pages/PageOne';
 import PageTwo from './pages/PageTwo';
 import PageThree from './pages/PageThree';
 import Home from './pages/Home';
-
+import NotFound from './pages/NotFound'
 class MyRoute extends Component {
     render() {
         return (
@@ -14,6 +14,7 @@ class MyRoute extends Component {
                     <Route exact path="/pageone" element={<PageOne />} />
                     <Route exact path="/pagetwo" element={<PageTwo />} />
                     <Route exact path="/pagethree" element={<PageThree />} />
+                    <Route  path="*" element={<NotFound/>} />
                 </Routes>
             </div>
         );
