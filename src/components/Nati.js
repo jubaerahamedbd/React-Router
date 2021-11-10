@@ -3,7 +3,7 @@ import Puti from './Puti';
 const Nati = (props) => {
     return (
         <div>
-           <Puti name={props.name}/>
+           <Puti/>
         </div>
     );
 };

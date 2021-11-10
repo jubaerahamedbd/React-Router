@@ -1,10 +1,19 @@
 import React from 'react';
+import { PutiConsumer } from './Context';
 
 const Puti = (props) => {
     return (
         <div>
-            <h1>I am From Puti</h1>
-            <h2>{props.name}</h2>
+            <h1>
+            <PutiConsumer>
+                {
+                    msg=>{
+                        return msg
+                    }
+                }
+            </PutiConsumer>
+            </h1>
+
         </div>
     );
 };

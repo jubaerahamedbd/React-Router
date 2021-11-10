@@ -1,12 +1,16 @@
 import './App.css';
+import { DadaProvider } from './components/Context';
 import Son from './components/Son';
 
 function App() {
 
   return (
     <div className="App">
-      <Son name="Puti Name is Salam"/>
+      <DadaProvider value="Dada Sent Text to Puti">
+        <Son />
+      </DadaProvider>
     </div>
+
   );
 }
 
