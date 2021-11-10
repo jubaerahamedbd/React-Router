@@ -11,7 +11,6 @@ class MyRoute extends Component {
         return (
             <div>
                 <Routes>
-                    
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/login" element={<Login />} />
                     <Route exact path="/pageone" element={<PageOne />} />
